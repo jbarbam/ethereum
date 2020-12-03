@@ -1,2 +1,0 @@
-# ethereum
-Aru ethereum projects
