@@ -15,18 +15,18 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_myAddress\",\"type\":\"address\"}],\"name\":\"myfunc\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Code/github/ethereum/test/contract.sol\":\"HelloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Code/github/ethereum/test/contract.sol\":{\"keccak256\":\"0xdbfa8c0e9c6748af395f3d7c6d14d8da1c1c7666bad788ac6cdd56cb2d786ddf\",\"license\":\"None\",\"urls\":[\"bzz-raw://8362b00043736406c0f2b32ba7e2e5f6b5c113eba8717549f68b9c0c41eb76e3\",\"dweb:/ipfs/QmQhmTbkzWCH9dQ8KN4TSr6AJRmCQPyHUDJcPBxf4je4Ti\"]}},\"version\":1}",
-    "bytecode": "6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea2646970667358221220d7bc44f4ce564eb987d1511dda87459c25f2daa08cef1b898d6f128644c9fe0d64736f6c63430007050033",
-    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea2646970667358221220d7bc44f4ce564eb987d1511dda87459c25f2daa08cef1b898d6f128644c9fe0d64736f6c63430007050033",
+    "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_myAddress\",\"type\":\"address\"}],\"name\":\"myfunc\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Code/github/ethereum/test/contracts/contract.sol\":\"HelloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Code/github/ethereum/test/contracts/contract.sol\":{\"keccak256\":\"0xdbfa8c0e9c6748af395f3d7c6d14d8da1c1c7666bad788ac6cdd56cb2d786ddf\",\"license\":\"None\",\"urls\":[\"bzz-raw://8362b00043736406c0f2b32ba7e2e5f6b5c113eba8717549f68b9c0c41eb76e3\",\"dweb:/ipfs/QmQhmTbkzWCH9dQ8KN4TSr6AJRmCQPyHUDJcPBxf4je4Ti\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
     "sourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;",
     "deployedSourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:71;;;;;;;;;;;;;;;;-1:-1:-1;86:71:0;-1:-1:-1;;;;;86:71:0;;:::i;:::-;;;;:::o",
-    "sourcePath": "c:/Code/github/ethereum/test/contract.sol",
+    "sourcePath": "c:/Code/github/ethereum/test/contracts/contract.sol",
     "compiler": {
         "name": "solc",
         "version": "0.7.5+commit.eb77ed08"
     },
     "ast": {
-        "absolutePath": "c:/Code/github/ethereum/test/contract.sol",
+        "absolutePath": "c:/Code/github/ethereum/test/contracts/contract.sol",
         "exportedSymbols": {
             "HelloWorld": [
                 8
