@@ -28,7 +28,7 @@
                         "linkReferences": {},
                         "object": "6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
                         "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x8B DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x6E0ED535 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x50 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x41 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x52 JUMP JUMPDEST STOP JUMPDEST POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MSTORE 0xE3 PUSH20 0xA3E112E84851A77B08057453944B137646D884F9 AND 0x1E 0x4A 0x4F LOG2 0xEE PUSH30 0x8ECD64736F6C634300070500330000000000000000000000000000000000 ",
-                        "sourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;"
+                        "sourceMap": "60:100:1:-:0;;;;;;;;;;;;;;;;;;;"
                     },
                     "deployedBytecode": {
                         "generatedSources": [],
@@ -36,7 +36,7 @@
                         "linkReferences": {},
                         "object": "6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
                         "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x6E0ED535 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x50 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x41 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x52 JUMP JUMPDEST STOP JUMPDEST POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MSTORE 0xE3 PUSH20 0xA3E112E84851A77B08057453944B137646D884F9 AND 0x1E 0x4A 0x4F LOG2 0xEE PUSH30 0x8ECD64736F6C634300070500330000000000000000000000000000000000 ",
-                        "sourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:71;;;;;;;;;;;;;;;;-1:-1:-1;86:71:0;-1:-1:-1;;;;;86:71:0;;:::i;:::-;;;;:::o"
+                        "sourceMap": "60:100:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:71;;;;;;;;;;;;;;;;-1:-1:-1;86:71:1;-1:-1:-1;;;;;86:71:1;;:::i;:::-;;;;:::o"
                     },
                     "gasEstimates": {
                         "creation": {
@@ -61,21 +61,60 @@
             }
         }
     },
+    "errors": [
+        {
+            "component": "general",
+            "errorCode": "1878",
+            "formattedMessage": "c:/Code/github/ethereum/test/contracts/MesageStore.sol: Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n",
+            "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+            "severity": "warning",
+            "sourceLocation": {
+                "end": -1,
+                "file": "c:/Code/github/ethereum/test/contracts/MesageStore.sol",
+                "start": -1
+            },
+            "type": "Warning"
+        },
+        {
+            "component": "general",
+            "errorCode": "3420",
+            "formattedMessage": "c:/Code/github/ethereum/test/contracts/MesageStore.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.5;\"\n",
+            "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.5;\"",
+            "severity": "warning",
+            "sourceLocation": {
+                "end": -1,
+                "file": "c:/Code/github/ethereum/test/contracts/MesageStore.sol",
+                "start": -1
+            },
+            "type": "Warning"
+        }
+    ],
     "sources": {
+        "c:/Code/github/ethereum/test/contracts/MesageStore.sol": {
+            "ast": {
+                "absolutePath": "c:/Code/github/ethereum/test/contracts/MesageStore.sol",
+                "exportedSymbols": {},
+                "id": 1,
+                "nodeType": "SourceUnit",
+                "nodes": [],
+                "src": "0:0:0"
+            },
+            "id": 0
+        },
         "c:/Code/github/ethereum/test/contracts/contract.sol": {
             "ast": {
                 "absolutePath": "c:/Code/github/ethereum/test/contracts/contract.sol",
                 "exportedSymbols": {
                     "HelloWorld": [
-                        8
+                        9
                     ]
                 },
-                "id": 9,
+                "id": 10,
                 "license": "None",
                 "nodeType": "SourceUnit",
                 "nodes": [
                     {
-                        "id": 1,
+                        "id": 2,
                         "literals": [
                             "solidity",
                             "^",
@@ -83,7 +122,7 @@
                             ".5"
                         ],
                         "nodeType": "PragmaDirective",
-                        "src": "34:23:0"
+                        "src": "34:23:1"
                     },
                     {
                         "abstract": false,
@@ -91,39 +130,39 @@
                         "contractDependencies": [],
                         "contractKind": "contract",
                         "fullyImplemented": true,
-                        "id": 8,
+                        "id": 9,
                         "linearizedBaseContracts": [
-                            8
+                            9
                         ],
                         "name": "HelloWorld",
                         "nodeType": "ContractDefinition",
                         "nodes": [
                             {
                                 "body": {
-                                    "id": 6,
+                                    "id": 7,
                                     "nodeType": "Block",
-                                    "src": "129:28:0",
+                                    "src": "129:28:1",
                                     "statements": []
                                 },
                                 "functionSelector": "6e0ed535",
-                                "id": 7,
+                                "id": 8,
                                 "implemented": true,
                                 "kind": "function",
                                 "modifiers": [],
                                 "name": "myfunc",
                                 "nodeType": "FunctionDefinition",
                                 "parameters": {
-                                    "id": 4,
+                                    "id": 5,
                                     "nodeType": "ParameterList",
                                     "parameters": [
                                         {
                                             "constant": false,
-                                            "id": 3,
+                                            "id": 4,
                                             "mutability": "mutable",
                                             "name": "_myAddress",
                                             "nodeType": "VariableDeclaration",
-                                            "scope": 7,
-                                            "src": "102:18:0",
+                                            "scope": 8,
+                                            "src": "102:18:1",
                                             "stateVariable": false,
                                             "storageLocation": "default",
                                             "typeDescriptions": {
@@ -131,10 +170,10 @@
                                                 "typeString": "address"
                                             },
                                             "typeName": {
-                                                "id": 2,
+                                                "id": 3,
                                                 "name": "address",
                                                 "nodeType": "ElementaryTypeName",
-                                                "src": "102:7:0",
+                                                "src": "102:7:1",
                                                 "stateMutability": "nonpayable",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_address",
@@ -144,28 +183,28 @@
                                             "visibility": "internal"
                                         }
                                     ],
-                                    "src": "101:20:0"
+                                    "src": "101:20:1"
                                 },
                                 "returnParameters": {
-                                    "id": 5,
+                                    "id": 6,
                                     "nodeType": "ParameterList",
                                     "parameters": [],
-                                    "src": "129:0:0"
+                                    "src": "129:0:1"
                                 },
-                                "scope": 8,
-                                "src": "86:71:0",
+                                "scope": 9,
+                                "src": "86:71:1",
                                 "stateMutability": "nonpayable",
                                 "virtual": false,
                                 "visibility": "public"
                             }
                         ],
-                        "scope": 9,
-                        "src": "60:100:0"
+                        "scope": 10,
+                        "src": "60:100:1"
                     }
                 ],
-                "src": "34:126:0"
+                "src": "34:126:1"
             },
-            "id": 0
+            "id": 1
         }
     }
 }
