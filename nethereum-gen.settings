@@ -1,0 +1,7 @@
+{
+    "projectName": "Ethereum",
+    "namespace": "Ethereum.Contracts",
+    "lang": 0,
+    "autoCodeGen": true,
+    "projectPath": "../"
+}

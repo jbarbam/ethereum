@@ -15,29 +15,29 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_myAddress\",\"type\":\"address\"}],\"name\":\"myfunc\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Code/github/ethereum/test/contracts/contract.sol\":\"HelloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Code/github/ethereum/test/contracts/contract.sol\":{\"keccak256\":\"0xdbfa8c0e9c6748af395f3d7c6d14d8da1c1c7666bad788ac6cdd56cb2d786ddf\",\"license\":\"None\",\"urls\":[\"bzz-raw://8362b00043736406c0f2b32ba7e2e5f6b5c113eba8717549f68b9c0c41eb76e3\",\"dweb:/ipfs/QmQhmTbkzWCH9dQ8KN4TSr6AJRmCQPyHUDJcPBxf4je4Ti\"]}},\"version\":1}",
-    "bytecode": "6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
-    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea264697066735822122052e373a3e112e84851a77b08057453944b137646d884f9161e4a4fa2ee7d8ecd64736f6c63430007050033",
-    "sourceMap": "60:100:1:-:0;;;;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "60:100:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:71;;;;;;;;;;;;;;;;-1:-1:-1;86:71:1;-1:-1:-1;;;;;86:71:1;;:::i;:::-;;;;:::o",
-    "sourcePath": "c:/Code/github/ethereum/test/contracts/contract.sol",
+    "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_myAddress\",\"type\":\"address\"}],\"name\":\"myfunc\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Code/github/ethereum/test/contracts/HelloWorld.sol\":\"HelloWorld\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Code/github/ethereum/test/contracts/HelloWorld.sol\":{\"keccak256\":\"0xdbfa8c0e9c6748af395f3d7c6d14d8da1c1c7666bad788ac6cdd56cb2d786ddf\",\"license\":\"None\",\"urls\":[\"bzz-raw://8362b00043736406c0f2b32ba7e2e5f6b5c113eba8717549f68b9c0c41eb76e3\",\"dweb:/ipfs/QmQhmTbkzWCH9dQ8KN4TSr6AJRmCQPyHUDJcPBxf4je4Ti\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea26469706673582212206a285fdd2790fd574536974eff710987184a7e82b9bbd21a49f922e003bfa54a64736f6c63430007050033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c80636e0ed53514602d575b600080fd5b605060048036036020811015604157600080fd5b50356001600160a01b03166052565b005b5056fea26469706673582212206a285fdd2790fd574536974eff710987184a7e82b9bbd21a49f922e003bfa54a64736f6c63430007050033",
+    "sourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "60:100:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:71;;;;;;;;;;;;;;;;-1:-1:-1;86:71:0;-1:-1:-1;;;;;86:71:0;;:::i;:::-;;;;:::o",
+    "sourcePath": "c:/Code/github/ethereum/test/contracts/HelloWorld.sol",
     "compiler": {
         "name": "solc",
         "version": "0.7.5+commit.eb77ed08"
     },
     "ast": {
-        "absolutePath": "c:/Code/github/ethereum/test/contracts/contract.sol",
+        "absolutePath": "c:/Code/github/ethereum/test/contracts/HelloWorld.sol",
         "exportedSymbols": {
             "HelloWorld": [
-                9
+                8
             ]
         },
-        "id": 10,
+        "id": 9,
         "license": "None",
         "nodeType": "SourceUnit",
         "nodes": [
             {
-                "id": 2,
+                "id": 1,
                 "literals": [
                     "solidity",
                     "^",
@@ -45,7 +45,7 @@
                     ".5"
                 ],
                 "nodeType": "PragmaDirective",
-                "src": "34:23:1"
+                "src": "34:23:0"
             },
             {
                 "abstract": false,
@@ -53,39 +53,39 @@
                 "contractDependencies": [],
                 "contractKind": "contract",
                 "fullyImplemented": true,
-                "id": 9,
+                "id": 8,
                 "linearizedBaseContracts": [
-                    9
+                    8
                 ],
                 "name": "HelloWorld",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
                         "body": {
-                            "id": 7,
+                            "id": 6,
                             "nodeType": "Block",
-                            "src": "129:28:1",
+                            "src": "129:28:0",
                             "statements": []
                         },
                         "functionSelector": "6e0ed535",
-                        "id": 8,
+                        "id": 7,
                         "implemented": true,
                         "kind": "function",
                         "modifiers": [],
                         "name": "myfunc",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
-                            "id": 5,
+                            "id": 4,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 4,
+                                    "id": 3,
                                     "mutability": "mutable",
                                     "name": "_myAddress",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 8,
-                                    "src": "102:18:1",
+                                    "scope": 7,
+                                    "src": "102:18:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -93,10 +93,10 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 3,
+                                        "id": 2,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "102:7:1",
+                                        "src": "102:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
@@ -106,26 +106,26 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "101:20:1"
+                            "src": "101:20:0"
                         },
                         "returnParameters": {
-                            "id": 6,
+                            "id": 5,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "129:0:1"
+                            "src": "129:0:0"
                         },
-                        "scope": 9,
-                        "src": "86:71:1",
+                        "scope": 8,
+                        "src": "86:71:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
                     }
                 ],
-                "scope": 10,
-                "src": "60:100:1"
+                "scope": 9,
+                "src": "60:100:0"
             }
         ],
-        "src": "34:126:1"
+        "src": "34:126:0"
     },
     "functionHashes": {
         "myfunc(address)": "6e0ed535"
