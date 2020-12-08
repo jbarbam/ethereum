@@ -28,4 +28,10 @@ contract MessageStore is Ownable{
         require(getBalance() >= amount);
         owner.transfer(amount);
     }
+    
+    function transferTo(uint amount, address payable accountTo) public isOwner {
+        require(getBalance() >= amount);
+        require(accountTo != address(0));
+        accountTo.transfer(amount);
+    }
 }
