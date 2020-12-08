@@ -5,7 +5,7 @@ import "./Ownable.sol";
 
 contract MessageStore is Ownable{
     
-    string private message;    
+    string private message;
     
     function setMessage(string memory newMessage) public payable {
         require(msg.value >= 3 ether);
@@ -14,5 +14,18 @@ contract MessageStore is Ownable{
     
     function getMessage() public view returns(string memory) {
         return message;
+    }
+    
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+    
+    function getBalanceInEther() public view returns(uint) {
+        return getBalance() / 1e18;
+    }
+    
+    function transfer(uint amount) public isOwner {
+        require(getBalance() >= amount);
+        owner.transfer(amount);
     }
 }
