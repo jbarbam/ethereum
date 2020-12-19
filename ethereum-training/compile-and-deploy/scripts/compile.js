@@ -23,7 +23,7 @@ const config = {
   };
 
 const output = JSON.parse(solc.compile(JSON.stringify(config)));
-//console.log(output.contracts['UsersContract.sol']['UsersContract'].abi);
+
 const bytecode = output.contracts['UsersContract.sol']['UsersContract'].evm.bytecode.object;
 const interface = JSON.stringify(output.contracts['UsersContract.sol']['UsersContract'].abi); //ABI --> application binary interface
 
