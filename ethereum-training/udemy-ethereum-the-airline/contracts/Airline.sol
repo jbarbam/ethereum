@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.4.24;
 
 contract Airline{
@@ -8,10 +9,13 @@ contract Airline{
         uint totalFlights;
     }
 
-    struct Flight{
+    struct Flight {
         string name;
         uint price;
     }
+
+    uint etherPerPoint = 0.5 ether;
+    uint pointsPerPurchase = 5;
     
     Flight[] public flights;
 
@@ -19,24 +23,54 @@ contract Airline{
     mapping(address => Flight[]) public customerFlights;
     mapping(address => uint) public customerTotalFlights;
 
-    event FlightPurchased(address indexed customer, uint price); //Evento
+    event FlightPurchased(address indexed customer, uint price);    //Evento que se emite cuando se compra un vuelo 
     
-    constructor() {
+    constructor() public {
         owner = msg.sender;
         
         flights.push(Flight('Barcelona', 4 ether));
         flights.push(Flight('Paris', 1 ether));
         flights.push(Flight('London', 2 ether));
+        flights.push(Flight('Berlin', 3 ether));
+        flights.push(Flight('Moscow', 5 ether));
     }
-
+    
     function buyFlight(uint flightIndex) public payable {
         Flight storage flight = flights[flightIndex];
         require(msg.value == flight.price);
 
         Customer storage customer = customers[msg.sender];
-        customer.loyaltyPoints += 5;
+        customer.loyaltyPoints += pointsPerPurchase;
         customer.totalFlights += 1;
         customerFlights[msg.sender].push(flight);
         customerTotalFlights[msg.sender] ++;
+
+        emit FlightPurchased(msg.sender, flight.price);
+    }
+
+    function totalFlights() public view returns (uint){
+        return flights.length;
+    } 
+
+    function redeemLoyaltyPoints() public {
+        Customer storage customer = customers[msg.sender];
+        uint etherToRefund = customer.loyaltyPoints * etherPerPoint;
+        msg.sender.transfer(etherToRefund);
+        customer.loyaltyPoints = 0;
+    }
+
+    function getRefundableEther() public view returns(uint){
+        return etherPerPoint * customers[msg.sender].loyaltyPoints;
+    }
+
+    function getAirlineBalance() public isOwner view returns(uint) {
+    
+        address airlineAddress = this;
+        return airlineAddress.balance;
+    }
+
+    modifier isOwner(){
+        require(msg.sender == owner);
+        _;
     }
 }
