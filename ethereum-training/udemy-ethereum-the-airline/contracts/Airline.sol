@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.4.24;
+pragma solidity >0.4.23;
 
 contract Airline{
     address public owner;
@@ -28,10 +28,10 @@ contract Airline{
     constructor() public {
         owner = msg.sender;
         
-        flights.push(Flight('Barcelona', 4 ether));
-        flights.push(Flight('Paris', 1 ether));
-        flights.push(Flight('London', 2 ether));
-        flights.push(Flight('Berlin', 3 ether));
+        flights.push(Flight('Tokio', 4 ether));
+        flights.push(Flight('Barcelona', 3 ether));
+        flights.push(Flight('London', 3 ether));
+        flights.push(Flight('Berlin', 4 ether));
         flights.push(Flight('Moscow', 5 ether));
     }
     
@@ -65,7 +65,7 @@ contract Airline{
 
     function getAirlineBalance() public isOwner view returns(uint) {
     
-        address airlineAddress = this;
+        address airlineAddress = address(this);
         return airlineAddress.balance;
     }
 
