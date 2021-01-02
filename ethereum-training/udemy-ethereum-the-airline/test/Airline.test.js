@@ -1,5 +1,3 @@
-const { ContextReplacementPlugin } = require("webpack");
-
 const Airline = artifacts.require('Airline');
 
 let instance;
